@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {momentDatePipe} from "../pipe/datemoment.pipe";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  protected readonly momentDatePipe = momentDatePipe;
 }
